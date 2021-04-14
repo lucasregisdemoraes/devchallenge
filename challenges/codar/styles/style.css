@@ -53,7 +53,7 @@ header ul {
 
 header a {
     font-size: 1.4rem;
-    color: black;
+    color: var(--mainTextColor);
     margin: 0 20px;
 }
 
@@ -115,7 +115,7 @@ main #firstSection button {
 }
 
 #secondSection input {
-    background-color: #d6d6d6;
+    background-color: #e0e0e0;
     font-size: 1.5rem;
     display: block;
     padding: 20px 25px;
@@ -129,7 +129,6 @@ main #firstSection button {
     background-color: var(--buttonColor);
     color: var(--secondaryTextColor);
     font-weight: 600;
-    display: block;
     padding: 23px;
     width: 300px;
     border: none;
@@ -140,10 +139,92 @@ main #firstSection button {
 }
 
 #thirdSection .comment {
-    background-color: #d6d6d6;
+    background-color: #e0e0e0;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 33px 0;
+    display: flex;
+    align-items:flex-start;
+}
+
+#thirdSection img {
+    width: 80px;
+}
+
+#thirdSection blockquote {
+    margin: 0 0 0 20px;
+}
+
+#thirdSection h2 {
+    margin: 10px 0 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+#thirdSection span {
+    font-weight: 600;
 }
 
 /*      =====   FOOTER    =====      */
+
+footer {
+    background-color: black;
+    color: var(--secondaryTextColor);
+    padding: 20px;
+}
+
+footer #footerTitle {
+    text-align: center;
+}
+
+footer #footerTitle  h1{
+    font-size: 3.7rem;
+    font-style: italic;
+    margin: 0;
+}
+
+footer #footerTitle  span{
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+footer h2 {
+    font-size: 1.7rem;
+    margin: 40px 0 0;
+}
+
+footer p {
+    font-size: 1.1rem;
+    width: 190px;
+    margin: 0;
+}
+
+footer ul {
+    padding: 0;
+    margin: 20px 0;
+}
+
+footer li {
+    list-style-type: none;
+    margin: 13px 0;
+}
+footer a {
+    color: var(--secondaryTextColor);
+    text-decoration: underline var(--secondaryTextColor);
+}
+
+footer #social-medias {
+    display: flex;
+}
+
+footer .social-media {
+    width: 45px;
+}
+
+footer #social-medias li{
+    margin: 0 40px 0 0;
+}
 
 /*      =====   ANIMATIONS    =====      */
 
