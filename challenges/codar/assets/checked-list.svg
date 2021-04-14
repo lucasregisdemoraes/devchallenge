@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="150"
-   height="150"
-   viewBox="0 0 39.687499 39.687499"
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458334"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="red-circle.svg">
+   sodipodi:docname="checked-list.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,20 +25,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="57.96734"
-     inkscape:cy="74.631435"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="656.65781"
+     inkscape:cy="443.50569"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     units="px"
-     width="40mm"
-     showguides="false"
      inkscape:window-width="1366"
      inkscape:window-height="711"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="false"
+     units="px" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -55,12 +54,11 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-257.31251)">
-    <circle
-       id="path10"
-       cx="19.84375"
-       cy="277.15625"
-       style="fill:#d6000d;fill-opacity:1;stroke-width:0.28938806"
-       r="19.84375" />
+     transform="translate(0,-270.54165)">
+    <path
+       style="fill:#d6000d;fill-opacity:1;stroke:#d6000d;stroke-width:0.16070119;stroke-opacity:1"
+       d="m 13.229171,270.62202 a 13.14895,13.14895 0 0 0 -13.14882041,13.14882 13.14895,13.14895 0 0 0 13.14882041,13.14881 13.14895,13.14895 0 0 0 13.1488,-13.14881 13.14895,13.14895 0 0 0 -13.1488,-13.14882 z m 6.46737,7.74749 c 0.0985,-0.007 0.19269,0.0153 0.27529,0.0839 0,0 1.81382,0.9601 1.38672,1.88378 -0.6485,0.56386 -9.20528,8.3259 -9.20528,8.3259 0,0 -1.13498,1.05168 -2.2421304,0.13828 -1.10716,-0.91339 -4.40078,-4.06854 -4.40078,-4.06854 0,0 -0.71962,-0.77519 -0.38746,-1.21805 0.52588,-0.52588 1.33706,-1.21417 1.33706,-1.21417 0,0 0.60727,-0.41499 1.39014,0.52446 0.78287,0.93945 2.1137,2.42708 2.1137,2.42708 0,0 0.5776904,0.49464 1.6521604,-0.0878 0.88073,-0.66544 7.14682,-6.14713 7.14682,-6.14713 0,0 0.50727,-0.61371 0.93376,-0.64777 z"
+       id="path94"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

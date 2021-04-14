@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="150"
-   height="150"
-   viewBox="0 0 39.687499 39.687499"
+   width="100"
+   height="95.556999"
+   viewBox="0 0 26.458333 25.28279"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="red-circle.svg">
+   sodipodi:docname="instagram.icon.svg.2021_04_14_15_06_52.0.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,20 +25,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="57.96734"
-     inkscape:cy="74.631435"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="66.76018"
+     inkscape:cy="400.64973"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     units="px"
-     width="40mm"
-     showguides="false"
      inkscape:window-width="1366"
      inkscape:window-height="711"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     units="px" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -55,12 +53,31 @@
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-257.31251)">
-    <circle
-       id="path10"
-       cx="19.84375"
-       cy="277.15625"
-       style="fill:#d6000d;fill-opacity:1;stroke-width:0.28938806"
-       r="19.84375" />
+     transform="translate(0,-271.71718)">
+    <g
+       id="g829"
+       transform="matrix(2.4204968,0,0,2.4204968,-237.31826,104.77292)">
+      <rect
+         ry="2.6058779"
+         y="69.439575"
+         x="98.513771"
+         height="9.5082979"
+         width="9.9939518"
+         id="rect8"
+         style="fill:none;fill-opacity:1;stroke:#d6000d;stroke-width:0.93699998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="0.60698026"
+         rx="0.60698032"
+         cy="71.448975"
+         cx="106.41615"
+         id="path9"
+         style="fill:#d6000d;fill-opacity:1;stroke:#d6000d;stroke-width:0.13230936;stroke-opacity:1" />
+      <circle
+         r="2.2585022"
+         cy="74.2015"
+         cx="103.51427"
+         id="path11"
+         style="fill:none;fill-opacity:1;stroke:#d6000d;stroke-width:0.91726303;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
   </g>
 </svg>
