@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+.notMobile {
+    display: none;
+}
+
 /*      =====   VARIABLE        =====      */
 
 :root {
@@ -20,8 +24,15 @@ a {
     --secondaryTextColor: white;
     --titleColor: #D6000D;
 
+    --biggestTextSize: 3.8rem;
+    --biggerTextSize: 3.2rem;
+    --bigTextSize: 1.8rem;
+    --normalTextSize: 1.5rem;
+    --smallTextSize: 1.3rem;
+    --smallerTextSize: 1.1rem;
+
     --buttonColor: #D6000D;
-    --buttonSecondaryCoor: #8a0009;
+    --buttonSecondaryColor: #b3000c;
     --buttonTextColor: white;
 }
 
@@ -33,7 +44,7 @@ header {
 
 header h1 {
     color: var(--titleColor);
-    font-size: 3.7rem;
+    font-size: var(--biggestTextSize);
     font-style: italic;
     text-align: center;
     margin: 0;
@@ -52,7 +63,7 @@ header ul {
 }
 
 header a {
-    font-size: 1.4rem;
+    font-size: var(--normalTextSize);
     color: var(--mainTextColor);
     margin: 0 20px;
 }
@@ -70,21 +81,27 @@ main #firstSection img{
     width: 300px;
 }
 
+main #firstSection div {
+    margin-top: 63px;
+}
+
+
 main #firstSection p{
-    font-size: 1.4rem;
+    font-size: var(--normalTextSize);
     font-weight: 600;
-    margin: 65px 0 33px 0;
+    /* margin: 65px 0 33px 0; */
+    margin: 0 0 33px 0;
 }
 
 main #firstSection strong {
-    font-size: 3.2rem;
+    font-size: var(--biggerTextSize);
     color: var(--titleColor);
 }
 
 main #firstSection button {
     background-color: var(--buttonColor);
     color: var(--secondaryTextColor);
-    font-size: 1.4rem;
+    font-size: var(--normalTextSize);
     font-weight: 300;
     border: none;
     border-radius: 15px;
@@ -100,23 +117,37 @@ main #firstSection button {
 }
 
 #secondSection ul {
-    font-size: 1.5rem;
-    padding: 0 0 0 110px;
-    margin: auto 0;
+    font-size: var(--normalTextSize);
+    padding: 0;
+    margin: 0 0 0 110px ;
     text-align: left;
+    list-style-type: none;
 }
 
 #secondSection li {
     margin: 35px 0;
+    display: flex;
+    align-items: center;
+}
+
+#secondSection li:before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    background-image: url(../assets/checked-list.svg);
+    background-repeat: no-repeat;
+    margin-right: 15px;
 }
 
 #secondSection strong {
-    font-size: 1.5rem;
+    font-size: var(--normalTextSize);
 }
 
 #secondSection input {
     background-color: #e0e0e0;
-    font-size: 1.5rem;
+    font-size: var(--normalTextSize);
     display: block;
     padding: 20px 25px;
     border-radius: 15px;
@@ -134,18 +165,18 @@ main #firstSection button {
     border: none;
     border-radius: 15px;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: var(--smallTextSize);
     margin: 0 auto;
 }
 
 #thirdSection .comment {
     background-color: #e0e0e0;
-    font-size: 1.1rem;
+    font-size: var(--smallerTextSize);
     border-radius: 15px;
     padding: 20px;
     margin: 33px 0;
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
 #thirdSection img {
@@ -158,7 +189,7 @@ main #firstSection button {
 
 #thirdSection h2 {
     margin: 10px 0 0 0;
-    font-size: 1.8rem;
+    font-size: var(--bigTextSize);
     font-weight: 400;
 }
 
@@ -178,24 +209,24 @@ footer #footerTitle {
     text-align: center;
 }
 
-footer #footerTitle  h1{
-    font-size: 3.7rem;
+footer h1{
+    font-size: var(--biggestTextSize);
     font-style: italic;
     margin: 0;
 }
 
 footer #footerTitle  span{
-    font-size: 1.4rem;
+    font-size: var(--normalTextSize);
     margin: 0;
 }
 
 footer h2 {
-    font-size: 1.7rem;
+    font-size: var(--bigTextSize);
     margin: 40px 0 0;
 }
 
 footer p {
-    font-size: 1.1rem;
+    font-size: var(--smallerTextSize);
     width: 190px;
     margin: 0;
 }
@@ -222,21 +253,197 @@ footer .social-media {
     width: 45px;
 }
 
-footer #social-medias li{
+footer #social-medias li {
     margin: 0 40px 0 0;
 }
 
 /*      =====   ANIMATIONS    =====      */
 
+header .container button:hover, #firstSection button:hover, #secondSection button:hover {
+    background-color: var(--buttonSecondaryColor);
+    transition: .3s;
+}
+
 /*      =====   RESPONSIVENESS    =====      */
 
-/*      =====   VARIABLE        =====      */
+@media (min-width: 800px) {
 
-/*      =====   GENERAL STYLES    =====      */
 
-/*      =====   HEADER    =====      */
+    
+    /*      =====   VARIABLE        =====      */
+    
+    :root {
 
-/*      =====   MAIN    =====      */
+    --biggestTextSize: 3rem;
+    --biggerTextSize: 3.2rem;
+    --bigTextSize: 1.8rem;
+    --normalTextSize: 1.3rem;
+    --smallTextSize: 1.3rem;
+    --smallerTextSize: 1.1rem;
+    }
 
-/*      =====   FOOTER    =====      */
+    /*      =====   GENERAL STYLES    =====      */
+    
+    .notMobile {
+        display: block;
+    }
 
+    .container {
+        padding: 80px 0 80px 120px;
+    }
+
+    /*      =====   HEADER    =====      */
+
+    header {
+        padding: 10px 0;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    header ul {
+        align-items: center;
+    }
+
+    header button {
+        font-size: var(--normalTextSize);
+        background-color: var(--buttonColor);
+        color: var(--secondaryTextColor);
+        font-weight: 500;
+        border: none;
+        border-radius: 10px;
+        padding: 8px 60px;
+        margin-left: 20px;
+    }
+    
+    /*      =====   MAIN    =====      */
+
+    main #firstSection {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    main #firstSection img {
+        width: 370px;
+    }
+
+    main #firstSection strong {
+        display: block;
+    }
+
+    main #firstSection div {
+        margin: 0 0 0 80px;
+    }
+
+    main #firstSection button {
+        font-weight: 600;
+        padding: 10px 45px;
+        border-radius: 10px;
+    }
+    
+    main #secondSection {
+        padding: 80px 0 80px 120px;
+        text-align: left;
+    }
+
+    main #divSecondSection {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    main #secondSection img {
+        width: 400px;
+        height: 100%;
+    }
+    
+    main #secondSection ul {
+        margin: 0 150px 0 0;
+    }
+    
+    main #secondSection li {
+        margin: 15px 0;
+    }
+
+    main #divForm {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        margin: auto;
+        justify-content: center;
+    }
+
+    main #secondSection form {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    main #secondSection input {
+        box-sizing: border-box;
+        width: 300px;
+        padding: 17px;
+        margin: 0;
+    }
+
+    main #secondSection button {
+        width: 300px;
+        padding: 17px;
+        margin: 0 0 0 10px;
+    }
+
+    main #thirdSection {
+        display: flex;
+        justify-content: space-between;
+        padding: 150px 50px 100px 50px;
+    }
+
+    main #thirdSection .comment {
+        margin: 0 15px;
+        width: 100%;
+    }    
+
+    /*      =====   FOOTER    =====      */
+
+    footer {
+        padding: 30px;
+    }
+    
+    footer .container {
+        padding: 30px 0 50px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    footer h1 {
+        text-align: left;
+    }
+
+    footer h2 {
+        margin: 10px 0 10px 0; 
+    }
+
+    footer ul {
+        margin: 0;
+    }
+
+    footer li {
+        margin: 0 0 10px 0;
+    }
+    
+    footer .social-media {
+        width: 35px;
+    }
+
+    footer #social-medias li {
+        margin: auto;
+    }
+}
