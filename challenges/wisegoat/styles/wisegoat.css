@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #BAA193;
+    font-size: 2.7rem;
+    margin: 0 0 70px 0;
+}
+
+strong {
+    color: #72005F;
+    line-height: 6.5rem;
+    font-size: 7rem;
+    font-weight: 600;
+    display: block;
+}
+
+button {
+    background-color: #72005F;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 50px;
+    margin-bottom: 30px;
+}
+
+img {
+    height: 450px;
+    margin-left: 100px;
+    transform: translateY(-70px);
+}
+
+img:hover {
+    transform: translateY(-100px);
+    transition: .8s;
+}
