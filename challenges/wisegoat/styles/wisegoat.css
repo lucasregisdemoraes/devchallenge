@@ -43,6 +43,26 @@ img {
 }
 
 img:hover {
-    transform: translateY(-100px);
-    transition: .8s;
+    transform: translateY(-90px);
+    transition: 1.5s;
+}
+
+@media(max-width:800px) {
+
+    main {
+        flex-direction: column;
+        height: initial;
+    }
+
+    h1 {
+        padding: 50px 0;
+    }
+
+    img {
+        transform: translateY(0);
+        margin: 50px 0;
+    }
+    img:hover {
+        transform: translateY(-30px);
+    }
 }
