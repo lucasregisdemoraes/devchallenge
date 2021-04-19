@@ -1,0 +1,138 @@
+/* ===== Perfil ===== */
+.profile {
+    background-color: #0F0E0E;
+}
+
+.profile-wrapper {
+    top: -75px;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePhoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profilePhoto img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: #0C0B0B;
+    font-family: 'Rubik', sans-serif;
+    color: #B7B7B7;
+    margin: 0;
+    padding-bottom: 78px;
+}
+
+.name {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.userName {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card-holder {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.edit {
+    background-color: #1f1c1c;
+    color: #B7B7B7;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 5px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+}
+
+/*  ===== Cartões ===== */
+
+.cards {
+    margin-top: -60px;
+    padding-bottom: 10px;
+}
+
+.projects {
+    background-color: #046313;
+}
+
+.stars {
+    background-color: #044A7D;
+}
+
+.followers {
+    background-color: #725200;
+}
+
+.card {
+    margin: 20px 80px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card strong {
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+/*  ===== Responsividade ===== */
+
+@media (min-width: 800px) {
+
+    body {
+        padding: 10vw;
+    }
+
+    .card-holder {
+        position: relative;
+        padding-top: 100px;
+        margin: 0;
+    }
+
+    .profile-wrapper {
+        top: 0px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 12px;
+    }
+
+    .name, .userName {
+        display: block;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 50px 10vw 0 10vw;
+        padding-bottom: 100px;
+    }
+
+    .card {
+        margin: 11px;
+    }
+
+}
