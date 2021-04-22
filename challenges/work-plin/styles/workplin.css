@@ -1,0 +1,270 @@
+/* Fazer primeiro o estilo e tamanho dos elementos, depois o posicionamento */
+
+/*  =====   VARIABLE  =====   */
+:root {
+    --mainTextColor: black;
+    --secondaryTextColor: #6C63FF;
+    --backgroundColor: #6C63FF;
+}
+
+/*  =====   GENERAL STYLES  =====   */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.notMobile {
+    display: none;
+}
+
+/*  =====   HEADER  =====   */
+
+header {
+    background-image: url(../assets/mancha.svg);
+    background-repeat: no-repeat;
+    background-position: right -100px bottom 150px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 0 30px;
+}
+
+header span {
+    color: var(--secondaryTextColor);
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    margin: 15px 0;
+}
+
+header a {
+    color: var(--mainTextColor);
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+/*  =====   MAIN  =====   */
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    font-size: 36px;
+    width: 300px;
+    margin: 30px auto;
+}
+
+main span {
+    color: var(--secondaryTextColor);
+}
+
+main img {
+    width: 250px;
+}
+
+#secondSection {
+    padding: 50px 0 150px;
+}
+
+#SecondSection #SecondSectionDiv {
+    margin: 80px 0 30px;
+}
+
+#inputs {
+    margin: 80px 0 20px;
+}
+
+main input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border: var(--backgroundColor) 3px solid;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.383);
+    padding: 20px;
+    margin: 15px 0;
+}
+
+::placeholder {
+    opacity: 1;
+}
+
+main button {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: var(--secondaryTextColor);
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    width: 220px;
+    height: 70px;
+    border-radius: 15px;
+
+}
+
+/*  =====   FOOTER  =====   */
+
+footer {
+    background-color: var(--backgroundColor);
+    text-align: center;
+    padding: 60px 0;
+}
+
+footer h1 {
+    font-size: 48px;
+    margin: 0 0 60px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin: 15px;
+}
+
+footer a {
+    color: var(--mainTextColor);
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/*  =====   RESPONSIVENESS  =====   */
+
+@media(min-width:800px) {
+
+    /*  =====   GENERAL STYLES  =====   */
+    
+    .container {
+        padding: 0 70px;
+    }
+    
+    .notMobile {
+        display: block;
+    }
+
+    /*  =====   HEADER  =====   */
+    
+    header {
+    background-position: right -100px bottom
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 48px;
+    }
+
+    header ul {
+        display: flex;
+    }
+
+    header li {
+        margin: 0 10px;
+    }
+    
+    /*  =====   MAIN  =====   */
+    
+    #firstSection {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        align-items: center;
+        padding: 100px 0;
+    }
+
+    #firstSection img {
+        width: 450px;
+        margin-right: 150px;
+    }
+
+    #firstSection h2 {
+        margin: 0;
+    }
+
+    #secondSection {
+        padding: 50px 0 200px;
+    }
+
+    #secondSectionDiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 70px auto;
+        max-width: 900px;
+    }
+
+    #inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        width: 47%;
+        height: 250px;
+    }
+
+    main input {
+        margin: 0;
+    }
+
+    #secondSection p {
+        font-size: 20px;
+        font-weight: 700;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 47%;
+        height: 220px;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    #secondSection button {
+        font-size: 30px;
+        width: 400px;
+        height: 50px;
+    }
+
+    /*  =====   FOOTER  =====   */
+ 
+    footer .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer h1 {
+        margin: 0;
+        font-size: 64px;
+    }
+
+    footer ul {
+        text-align: left;
+    }
+}
