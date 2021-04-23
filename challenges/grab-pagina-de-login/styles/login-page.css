@@ -1,0 +1,177 @@
+/*      =====    VARIABLE     =======  */
+:root {
+    --backgroundColor: #4E5BEE;
+    --secondaryBackgroundColor: #F8F8F8;
+
+    --mainTextColor: #F8F8F8;
+    --secondaryTextColor: #504F60;
+
+    --errorColor: #FF5757;
+}
+
+/*      =====       GENERAL STYLES      =======  */
+
+.notMobile {
+    display: none;
+}
+
+/*      =====   BODY      =======  */
+
+body {
+    margin: 0;
+}
+
+div {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--backgroundColor);
+    color: var(--mainTextColor);
+    padding: 0 50px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*      =====   MAIN     =======  */
+
+main {
+    margin-top: auto;
+}
+
+#grabLogo {
+    width: 177px;
+    margin-bottom: 80px;
+}
+
+input {
+    color: var(--mainTextColor);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px var(--secondaryBackgroundColor) solid;
+    display: block;
+    width: 350px;
+    height: 55px;
+    border-radius: 30px;
+    margin: 20px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+input:invalid {
+    border: 2px var(--errorColor) solid;
+}
+
+input:focus {
+    outline: none;
+}
+
+#mail {
+    background-image: url(../assets/alternate_email_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+
+#password {
+    background-image: url(../assets/lock_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+
+button {
+    background-color: var(--secondaryBackgroundColor);
+    color: var(--secondaryTextColor);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 350px;
+    height: 55px;
+    border-radius: 30px;
+    margin-top: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--mainTextColor);
+    border: 2px var(--secondaryBackgroundColor) solid;
+    transition: .2s;
+}
+
+/*      =====   FOOTER      =======  */
+
+footer {
+    margin: auto 0 50px 0;
+}
+
+span {
+    font-size: 14px;
+}
+
+a {
+    color: var(--mainTextColor);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+/*      =====    RESPONSIVENESS     =======  */
+
+@media(min-width: 800px) {
+
+    /*      =====       GENERAL STYLES      =======  */
+
+    .notMobile {
+        display: block;
+    }
+
+    /*      =====   BODY     =======  */
+
+    body {
+        display: flex;
+    }
+
+    div {
+        padding: 0 100px;
+        border-radius: 20px 0 0 20px;
+    }
+
+
+
+    
+    /*      =====   MAIN     =======  */
+    
+    #interview {
+        position: absolute;
+        right: 20px;
+        z-index: -1;
+        height: 90vh;
+        max-height: 650px;
+    }
+    
+    /*      =====   ASIDE     =======  */
+    
+    /* aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    img {
+        margin: auto 0;
+        height: 100vh;
+    }
+
+     */
+
+    /*      =====   FOOTER     =======  */
+    
+    
+}
+
