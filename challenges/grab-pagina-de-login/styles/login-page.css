@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 
-div {
+#bodyDiv {
     font-family: 'Roboto', sans-serif;
     background-color: var(--backgroundColor);
     color: var(--mainTextColor);
@@ -31,6 +31,7 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 20px;
 }
 
 /*      =====   MAIN     =======  */
@@ -42,6 +43,10 @@ main {
 #grabLogo {
     width: 177px;
     margin-bottom: 80px;
+}
+
+form div {
+    position: relative;
 }
 
 input {
@@ -62,10 +67,26 @@ input {
 
 input:invalid {
     border: 2px var(--errorColor) solid;
+    box-shadow: none;
+}
+
+input:valid {
+    border: 2px var(--mainTextColor) solid !important;
+}
+
+input:not(:focus) {
+    border: 2px var(--mainTextColor) solid;
 }
 
 input:focus {
     outline: none;
+}
+
+.errorMessage {
+    position: absolute;
+    display: none;
+    left: 25px;
+    bottom: -20px;
 }
 
 #mail {
@@ -136,7 +157,7 @@ a {
         display: flex;
     }
 
-    div {
+    #bodyDiv {
         padding: 0 100px;
         border-radius: 20px 0 0 20px;
     }
