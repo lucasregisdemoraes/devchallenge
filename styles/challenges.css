@@ -1,0 +1,30 @@
+#back-btn {
+    position: fixed;
+    background-color: lightgray;
+    color: black;
+    border: black 2px solid;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    bottom: 80px;
+    left: calc(50% - 150px);
+    font-size: 1.5rem;
+    z-index: 100;
+    font-weight: 400;
+}
+
+#back-btn:hover {
+    background-color: rgb(230, 230, 230);
+    border: none;
+    border: rgb(104, 104, 104) 2px solid;
+    transition: .3s;
+}
+
+@media(min-width:880px) {
+
+    #back-btn {
+        top: 10px;
+        bottom: initial;
+    }
+
+}
